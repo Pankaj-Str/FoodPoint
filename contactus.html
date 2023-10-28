@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- header start section -->
-    <div class="container">
+    <div class="container mb-3">
         <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
@@ -38,91 +38,59 @@
           </nav>    
     </div>
     <!-- header end section -->
-
-   
+ 
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-               <!--Section: Contact v.2-->
-<section class="mb-4">
+        <div class="card card shadow " style="border-radius: 1rem; ">
+          <div class="row g-0">
 
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+            <div class="card border border-0 m-1" style="width: 28rem;"> 
+                    <iframe style="object-fit: cover; margin-top: 70px; height: 600px; border:1px solid whitesmoke; border-radius: 10px;"  src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d241334.43408775362!2d72.70838877510327!3d19.070308160984133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3be7b0e8f7c98f27%3A0x80862f1b3a2bf461!2sKeerti%20Computer%20Institute%2C%20Harishankar%2C%201%20st%20Floor%2C%20Sangeeta%20Niwas%2C%20Opp%20B.M.C.School%20%26%20Garden%2CAgarwal%20Compound%2C%20Hari%20Shankar%20Joshi%20Rd%2C%20Dahisar%20East%2C%20Mumbai%2C%20Maharashtra%20400068!3m2!1d19.2512431!2d72.86011859999999!5e0!3m2!1sen!2sin!4v1690449720816!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </div> 
 
+            <div class="col-md-6 col-lg-7 d-flex align-items-center " style="margin-left: 10px;">
+              <div class="card-body  p-lg-5 text-black">
 
- 
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
+                <form>
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <i class="h1 fw-bold mb-0" style="margin: auto;" >Contact Us</i>
+                    </div>
+  
+                    <label class="pb-3 mb-4">Do you have any questions? Please contact us directly. Our team will come  back to help you.</label>
+  
+                    <div class="mb-5 row">
+                        <div class="col">
+                            <label class="form-label">First Name :</label>
+                            <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
+                        </div>
+                        <div class="col">
+                            <label class="form-label">Last Name :</label>
+                            <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
                         </div>
                     </div>
-                    <!--Grid column-->
 
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
+                    
+                    <div class="form-outline mb-4">
+                      <label class="form-label">Email address :</label>
+                      <input type="email"  class="form-control form-control-lg" /> 
                     </div>
-                    <!--Grid column-->
 
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
+                    <div class="form-outline mb-5">
+                        <label for="message" class="form-label">Message :</label>
+                        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
                     </div>
-                </div>
-                <!--Grid row-->
+  
+                    <div class="pt-1 mb-4">
+                    <center>  <button class="btn btn-primary btn-lg btn-block border-0 border-black" style="width: 100px;"  type="submit"><strong>Post</strong></button></center>
+                    </div>
+                  </form>
 
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
+              </div>
+            
+          </div>
         </div>
-        <!--Grid column-->
-
+      </div>     
     </div>
-
-</section>
-<!--Section: Contact v.2-->
-            </div>
-            <div class="col-sm-6 pe-3 ps-3 pt-2 pb-2">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d241334.43408775362!2d72.70838877510327!3d19.070308160984133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3be7b0e8f7c98f27%3A0x80862f1b3a2bf461!2sKeerti%20Computer%20Institute%2C%20Harishankar%2C%201%20st%20Floor%2C%20Sangeeta%20Niwas%2C%20Opp%20B.M.C.School%20%26%20Garden%2CAgarwal%20Compound%2C%20Hari%20Shankar%20Joshi%20Rd%2C%20Dahisar%20East%2C%20Mumbai%2C%20Maharashtra%20400068!3m2!1d19.2512431!2d72.86011859999999!5e0!3m2!1sen!2sin!4v1690449720816!5m2!1sen!2sin" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </div>
-    
-    
 
 </body>
 </html>
