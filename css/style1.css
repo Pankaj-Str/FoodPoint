@@ -187,3 +187,8 @@
         width: 300px;
     }
 }
+}
+
+.modal {
+   display: flex;
+}

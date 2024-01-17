@@ -4,3 +4,11 @@
 .border1{
     border: solid 1px black;
 }
+
+
+.navbar-nav{
+    width: 100%;
+    display: flexbox;
+    flex-wrap: wrap;
+
+}
