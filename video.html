@@ -44,17 +44,43 @@ rel="stylesheet"
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="#">Product</a>
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="#">@teamsamosa</a>
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="contactus.html">@contact us</a>
-                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="video.html">Video</a> 
+                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" data-bs-toggle="modal" data-bs-target="#Video">Video</a> 
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="Product.html">Product</a>
-                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="login.html">Login</a>  
+                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" data-bs-toggle="modal" data-bs-target="#Login">Login</a>  
                 </div>
               </div>
             </div>
           </nav>    
     </div>
     <!-- header end section -->
+    <!-- Modal section -->
+    <div class="modal" id="Login" >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-warning ">
+            <h5 class="modal-title">Login now</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" >
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer bg-warning border-5 border-warning ">
+            <button type="button" class="btn btn-danger ">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
    
-
+    <!-- <body start section -->
     <div class="container mt-5">
 
         <div class="row">
@@ -63,6 +89,18 @@ rel="stylesheet"
                 <iframe width="100%" height="430" src="https://www.youtube.com/embed/W6u0NuJnT5E" title="Yes Yes Vegetables Song | CoComelon Nursery Rhymes &amp; Kids Songs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="p-4 object-fit-xxl-contain border rounded-4"></iframe>
             </div>
             <div class="col-sm-4">
+              <!-- Modal Trigger Button -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Open Modal</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Card Modal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
                 <div class="card m-2 p-2 bg-warning">
                     <div class="row">
                       <div class="col-sm-4 p-3">
@@ -103,7 +141,17 @@ rel="stylesheet"
                     </div>
                 </div> 
                 
-                </div> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div> 
             </div>
             </div>
 

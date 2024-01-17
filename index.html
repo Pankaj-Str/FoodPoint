@@ -29,16 +29,102 @@
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="faq.html">FAQ</a>
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="#">@teamsamosa</a>
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="contactus.html">@contact us</a>
-                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="video.html">Video</a>  
+                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" data-bs-toggle="modal" data-bs-target="#Video">Video</a>  
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="Product.html">Product</a>
-                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="login.html">Login</a>
+                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" data-bs-toggle="modal" data-bs-target="#Login">Login</a>
                 </div>
               </div>
             </div>
           </nav>    
     </div>
     <!-- header end section -->
-    <!-- start center section -->
+     <!-- start center section -->
+    <!-- Modal section Login-->
+    <div class="modal" id="Login" >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-warning ">
+            <h5 class="modal-title">Login now</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" >
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer bg-warning border-5 border-warning ">
+            <button type="button" class="btn btn-danger ">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--  End Modal section Login -->
+  
+    <!-- Modal Section Video-->
+    <div class="modal fade" id="Video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Videos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+        <div class="card m-2 p-2 bg-warning">
+            <div class="row">
+              <div class="col-sm-4 p-3">
+                <img src="img/samosa.png" class="img-thumbnail" alt="...">
+              </div>
+              <div class="col-sm-8 p-3">
+                <div class="#">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as </p>
+                </div>
+              </div>                                                  
+            </div>
+        </div> 
+        <div class="card m-2 p-2 bg-warning">
+            <div class="row">
+              <div class="col-sm-4 p-3 ">
+                <img src="img/samosa.png" class="img-thumbnail" alt="...">
+              </div>
+              <div class="col-sm-8 p-3">
+                <div class="#">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as </p>
+                </div>
+              </div>                                                  
+            </div>
+        </div> 
+        <div class="card m-2 p-2 bg-warning">
+            <div class="row">
+              <div class="col-sm-4 p-3">
+                <img src="img/samosa.png" class="img-thumbnail" alt="...">
+              </div>
+              <div class="col-sm-8 p-3">
+                <div class="#">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as </p>
+                </div>
+              </div>                                                  
+            </div>
+        </div> 
+        
+        </div>
+        
+      </div>
+  </div>
+</div>
+</div>
+
+<!--End Modal Section Video-->
+
 
     <div class="container">
       <div class="row">
@@ -60,7 +146,6 @@
                   </figcaption>
                 </figure>
               </div>
-           
             </div>
         </div>
       </div>
