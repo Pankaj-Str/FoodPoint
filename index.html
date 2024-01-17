@@ -31,7 +31,7 @@
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="contactus.html">@contact us</a>
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="video.html">Video</a>  
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="Product.html">Product</a>
-                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page"  data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" data-bs-toggle="modal" data-bs-target="#login">Login</a>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@
                 <h1 class="modal-title fs-5" >Login Now !</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
-              <div class="modal-body border-5 border border-warning">
+              <div class="modal-body border-5 border-warning">
                 <form>
                   <div class="mb-3">
                     <label class="form-label">Email address</label>
@@ -62,6 +62,7 @@
               </div>
               <div class="modal-footer bg-warning">
                  <button type="button" class="btn btn-danger">Login</button>
+                 <a aria-current="page" href="register.html" class="btn btn-danger">Register</a>
               </div>
 
             </div>
@@ -104,25 +105,30 @@
      <!--  Carousel Sart -->
     <div class="container">
      <div id="carouselExampleInterval" class="carousel slide shadow" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="4000">
-          <img src="img/slide1.jpg" class="d-block w-100" style="height: 400px;" alt="...">
+          <img src="img/slide1.jpg" class="rounded d-block mx-auto img-fluid" style="height: 400px;" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="3500">
-          <img src="img/slide2.jpg" class="d-block w-100" style="height: 400px;"  alt="...">
+          <img src="img/slide2.jpg" class="rounded d-block mx-auto img-fluid" style="height: 400px;"  alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="3500">
-          <img src="img/slide3.jpg" class="d-block w-100" style="height: 400px;"  alt="...">
+          <img src="img/slide3.jpg" class="rounded d-block mx-auto img-fluid" style="height: 400px;"  alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
         data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon bg-success" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
         data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-icon bg-success" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>

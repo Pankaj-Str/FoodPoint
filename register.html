@@ -33,7 +33,7 @@
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="contactus.html">@contact us</a>
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="video.html">Video</a>  
                   <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="Product.html">Product</a>
-                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" href="login.html">Login</a>
+                  <a class="nav-link  border border-1 border-warning-subtle fw-bold rounded-pill shadow bg-warning text-center ps-3 pe-3 m-2 " aria-current="page" data-bs-toggle="modal" data-bs-target="#login">Login</a>
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@
 
                   <div class="form-outline mb-4">
                     <label class="form-label" for="form2Example17">Mobile No:</label>
-                    <input type="number" id="form2Example17" class="form-control form-control-lg" />
+                    <input type="number" id="form2Example17" class="form-control form-control-lg no-spinner" />
                   </div>
 
                   <div class="form-outline mb-4">
@@ -93,8 +93,8 @@
                   </div>
 
                   
-                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Already have an account? <a href="login.html"
-                      style="color: #393f81;">Login here</a></p>
+                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Already have an account? <a data-bs-toggle="modal" data-bs-target="#login"
+                      style="color: #393f81; cursor: pointer;">Login here</a></p>
                 </form>
 
               </div>
@@ -106,6 +106,36 @@
   </div>
 
         
+    </div>
+
+    <!-- login model -->
+
+    <div class="modal" id="login">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-warning">
+              <h1 class="modal-title fs-5" >Login Now !</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body border-5 border-warning">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">Email address</label>
+                  <input type="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <labelclass="form-label">Password</label>
+                  <input type="password" class="form-control">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer bg-warning">
+              <button type="button" class="btn btn-danger">Login</button>
+              <a aria-current="page" href="register.html" class="btn btn-danger">Register</a>
+            </div>
+
+          </div>
+      </div>
     </div>
 
 </body>
